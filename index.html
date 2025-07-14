@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Grenze:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=New+Rocker&family=Quicksand:wght@300..700&display=swap"
+        rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frontend Mentor</title>
+    <style>
+        html {
+            font-size: 62.5%;
+        }
+
+        body {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+
+            font-family: "Grenze", serif;
+            background-image: linear-gradient(to right bottom, #0f2027, #203a43, #2c5364);
+            color: #ccc;
+            background-repeat: no-repeat;
+            overflow: hidden;
+            scrollbar-width: none;
+            -ms-overflow-style: none;
+        }
+
+        body::-webkit-scrollbar {
+            display: none;
+        }
+
+        .page {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+        }
+
+        .container {
+            overflow-y: auto;
+            height: 100vh;
+            padding: 0 6.2rem;
+            scrollbar-width: none;
+            -ms-overflow-style: none;
+        }
+
+        .heading-primary {
+            font-family: "New Rocker", system-ui;
+            font-size: 6.2rem;
+            padding-top: 2rem;
+            font-weight: 300;
+            /* margin: 0; */
+            color: #e0e0e0;
+            text-shadow: 1px 1px 5px #f00, 0 0 10px #0f0;
+        }
+
+        ol {
+
+            font-size: 2.4rem;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            gap: 2.4rem;
+        }
+
+        .link:link,
+        .link:visited {
+            text-decoration: none;
+            font-size: 3.2rem;
+            color: #ccc;
+            transition: all .3s;
+        }
+
+        li:hover,
+        li:active,
+        .link:hover,
+        .link:active {
+            color: #87cefa;
+        }
+
+        li {
+            padding-left: 5px;
+        }
+
+
+
+        .description {
+            margin: 0;
+            font-size: 2.4rem;
+            color: #777;
+        }
+
+        .content-img {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            height: 100vh;
+            padding-right: 2rem;
+        }
+
+        .content-img img {
+            max-width: 100%;
+            max-height: 100vh;
+            border-radius: 1rem;
+            box-shadow: 0 4px 24px rgba(0, 0, 0, 0.3);
+        }
+
+        @media (max-width:90em) {
+            html {
+                font-size: 56.25%;
+            }
+
+            .container {
+                padding: 0 3.2rem;
+            }
+        }
+
+        @media (max-width: 64em) {
+            html {
+                font-size: 50%;
+            }
+
+            .container {
+                padding: 0 3.2rem;
+            }
+        }
+
+        @media (max-width:48em) {
+            html {
+                font-size: 43.75%;
+            }
+
+            .heading-primary {
+                padding: 0;
+            }
+        }
+
+        @media (max-width:37.5em) {
+            body {
+                overflow: auto;
+            }
+
+            .page {
+                grid-template-columns: 1fr;
+            }
+
+            .content-img {
+                /* grid-row: 1; */
+                display: none;
+            }
+
+            /* 
+            .container {
+                grid-row: 1;
+
+            } */
+        }
+
+        @media (max-width:23.43em) {
+            html {
+                font-size: 37.5%;
+            }
+
+            ol {
+                padding-inline-start: 10px
+            }
+
+            ;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="page">
+        <div class="container">
+            <h1 class="heading-primary">Frontend Mentor Projects</h1>
+            <div class="allProject">
+                <ol class="projects">
+
+                    <li class="project">
+                        <a href="./blog-preview-card-main/index.html" class="link">
+                            <strong>Blog Preview Card Main</strong>
+                            <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia,
+                                iure!
+                            </p>
+                        </a>
+                    </li>
+                    <li class="project">
+                        <a href="./blog-preview-card-main/index.html" class="link">
+                            <strong>Blog Preview Card Main</strong>
+                            <p class="description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea,
+                                deleniti quibusdam reiciendis saepe debitis ullam. Deleniti cumque corrupti enim eius
+                                facere magnam blanditiis voluptate! Tenetur iure natus nam voluptate fugiat.
+                            </p>
+                        </a>
+                    </li>
+                    <li class="project">
+                        <a href="./blog-preview-card-main/index.html" class="link">
+                            <strong>Blog Preview Card Main</strong>
+                            <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia,
+                                iure!
+                            </p>
+                        </a>
+                    </li>
+
+                </ol>
+            </div>
+        </div>
+        <div class="content-img">
+            <img src="./img.jpg" alt="Coding Image">
+        </div>
+    </div>
+</body>
+
+</html>
