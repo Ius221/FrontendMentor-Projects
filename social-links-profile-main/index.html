@@ -15,24 +15,148 @@
   <title>Frontend Mentor | Social links profile</title>
 
   <style>
+    html {
+      font-size: 62.5%;
+    }
+
+    body {
+      background-color: hsl(0, 0%, 8%);
+      font-family: "Inter", sans-serif;
+
+      color: hsl(0, 0%, 100%);
+    }
+
     .attribution {
-      font-size: 11px;
+      font-size: 1.1rem;
       text-align: center;
     }
 
     .attribution a {
       color: hsl(228, 45%, 44%);
     }
+
+    /* MY CSS */
+
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      max-width: 140rem;
+      margin: 0 auto;
+      display: flex;
+
+    }
+
+    .card {
+      margin: 6.4rem 0;
+      background-color: hsl(0, 0%, 12%);
+      padding: 2.4rem 1.6rem;
+      border-radius: 24px;
+      width: 35rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+    }
+
+    .person-info {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .location {
+      margin-top: -8px;
+      font-size: 1.2rem;
+      color: hsl(75, 94%, 57%);
+      font-weight: 700;
+    }
+
+    h1 {
+      font-size: 2.4rem;
+    }
+
+    .person-detail {
+      font-size: 1.4rem;
+      margin: 2.4rem 0 1.6rem 0;
+    }
+
+    img {
+      width: 10rem;
+      border-radius: 50%;
+    }
+
+    .social-links {
+      display: flex;
+      flex-direction: column;
+      gap: 1.4rem;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .my-links:link,
+    .my-links:visited {
+      background-color: hsl(0, 0%, 20%);
+      padding: 1.2rem 1.8rem;
+      border-radius: 12px;
+      display: flex;
+      justify-content: center;
+      font-size: 1.4rem;
+      color: #fff;
+      text-decoration: none;
+      font-weight: 600;
+      width: 30rem;
+    }
+
+    .my-links:hover,
+    .my-links:active {
+      background-color: hsl(75, 94%, 57%);
+      color: hsl(0, 0%, 20%);
+
+    }
+
+    @media (max-width:26.56em) {
+      html {
+        font-size: 50%;
+      }
+
+      .card {
+        width: 28rem;
+      }
+
+      .my-links:link,
+      .my-links:visited {
+        width: 20rem;
+      }
+    }
   </style>
 </head>
 
 <body>
 
-
+  <div class="container">
+    <div class="card">
+      <div class="person-info">
+        <img src="./assets/images/avatar-jessica.jpeg" alt="lady Image">
+        <h1 class="name">Jessica Randall</h1>
+        <div class="location">London, United Kingdom</div>
+      </div>
+      <p class="person-detail">"Front-end developer and avid reader."</p>
+      <div class="social-links">
+        <a class="my-links" href="#">GitHub</a>
+        <a class="my-links" href="#">Frontend Mentor</a>
+        <a class="my-links" href="#">LinkedIn</a>
+        <a class="my-links" href="#">Twitter</a>
+        <a class="my-links" href="#">Instagram</a>
+      </div>
+    </div>
+  </div>
 
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="https://github.com/Ius221/FrontendMentor-Projects/tree/main/social-links-profile-main">Ayush
+      Gupta</a>.
   </div>
 </body>
 
