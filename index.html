@@ -84,12 +84,21 @@
             padding-left: 5px;
         }
 
+        ul li:hover {
+            color: unset;
+        }
 
-
-        .description {
+        .description,
+        ul,
+        .desc {
             margin: 0;
             font-size: 2.4rem;
             color: #777;
+        }
+
+        .desc {
+            margin-top: -32px;
+            margin-bottom: 32px;
         }
 
         .content-img {
@@ -135,6 +144,10 @@
             .heading-primary {
                 padding: 0;
             }
+
+            .desc {
+                margin-top: -20px;
+            }
         }
 
         @media (max-width:37.5em) {
@@ -176,32 +189,48 @@
     <div class="page">
         <div class="container">
             <h1 class="heading-primary">Frontend Mentor Projects</h1>
+            <p class="desc">Here I start new project and I am very excited to complete this one
+                and ready to take new challange for my growth. <br />
+                The thing I have learn is:
             <div class="allProject">
                 <ol class="projects">
 
                     <li class="project">
                         <a href="./blog-preview-card-main/index.html" class="link">
                             <strong>Blog Preview Card Main</strong>
-                            <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia,
-                                iure!
+                            <p class="description">Just wrapped up my first Frontend Mentor project — and honestly, the
+                                whole experience was super awesome!
                             </p>
                         </a>
                     </li>
                     <li class="project">
                         <a href="./social-links-profile-main/index.html" class="link">
                             <strong>Social Link Profile</strong>
-                            <p class="description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea,
-                                deleniti quibusdam reiciendis saepe debitis ullam. Deleniti cumque corrupti enim eius
-                                facere magnam blanditiis voluptate! Tenetur iure natus nam voluptate fugiat.
+                            <p class="description">
+                                What I picked up from this project:
                             </p>
+                            <ul>
+                                <li>Got better at building clean, responsive layouts with HTML & CSS.</li>
+                                <li>Learned how to use flexbox to center and align stuff perfectly.</li>
+                                <li>Added some cool hover effects to make the design pop.</li>
+                            </ul>
+
                         </a>
                     </li>
                     <li class="project">
                         <a href="./3-column-preview-card-component-main/index.html" class="link">
                             <strong>3 Column Preview Card Component</strong>
-                            <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia,
-                                iure!
+                            <p class="description">
+                                What I learned from this project:
                             </p>
+                            <ul>
+                                <li>Figured out how to build a clean 3-column layout that actually looks good on all
+                                    screen sizes.</li>
+                                <li>Got better at using flexbox and media queries for responsive design.</li>
+                                <li>Learned to keep colors, fonts, and spacing consistent — makes the whole thing feel
+                                    way more professional.</li>
+                            </ul>
+
                         </a>
                     </li>
                     <li class="project">
@@ -210,6 +239,20 @@
                             <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia,
                                 iure!
                             </p>
+                        </a>
+                    </li>
+                    <li class="project">
+                        <a href="./news-homepage-main/index.html" class="link">
+                            <strong>Browser Extension Manager</strong>
+                            <p class="description">
+                                The thing I learn from this project is:
+                            </p>
+                            <ul>
+                                <li>Lorem, ipsum.</li>
+                                <li>Lorem, ipsum.</li>
+                                <li>Lorem, ipsum.</li>
+                            </ul>
+
                         </a>
                     </li>
                 </ol>
