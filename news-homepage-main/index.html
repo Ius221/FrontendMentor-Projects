@@ -14,7 +14,7 @@
 
   <title>Frontend Mentor | News homepage</title>
 
-  <link rel="stylesheet" href="./assets/css/general.css">
+  <script src="./assets/javascript/script.js" defer></script>
   <link rel="stylesheet" href="./assets/css/style.css">
 
   <style>
@@ -31,101 +31,104 @@
 </head>
 
 <body>
-
-  <nav class="container nav">
-    <div class="logo">
-      <img src="./assets/images/logo.svg" alt="W.">
-    </div>
-    <div class="links">
-      <ul>
-        <li class="nav-links"><a class="nav-link" href="#">Home</a></li>
-        <li class="nav-links"><a class="nav-link" href="#">New</a></li>
-        <li class="nav-links"><a class="nav-link" href="#">Popular</a></li>
-        <li class="nav-links"><a class="nav-link" href="#">Trending</a></li>
-        <li class="nav-links"><a class="nav-link" href="#">Categories</a></li>
-      </ul>
-    </div>
-  </nav>
-
-  <div class="container grid grid--cols-3 ">
-    <img class="main-img" src="./assets/images/image-web-3-desktop.jpg" alt="desktop image">
-
-    <h1 class="title">
-      The Bright Future of Web 3.0?
-    </h1>
-    <div class="description-contaier">
-      <p class="description">
-        We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of
-        the people.
-        But is it really fulfilling its promise?
-      </p>
-      <button>read more</button>
-    </div>
-
-    <div class="right-box">
-      <h2 class="box-main-title">New</h2>
-      <div class="box-contents">
-        <h3 class="box-title">Hydrogen VS Electric Cars</h3>
-        <p class="box-desc">Will hydrogen-fueled cars ever catch up to EVs?</p>
+  <div class="main-contents">
+    <nav class="container nav">
+      <div class="logo">
+        <img src="./assets/images/logo.svg" alt="W.">
       </div>
-      <div class="box-contents">
-        <h3 class="box-title">The Downsides of AI Artistry</h3>
-        <p class="box-desc">What are the possible adverse effects of on-demand AI image generation?</p>
-      </div>
-      <div class="box-contents">
-        <h3 class="box-title">Is VC Funding Drying Up?</h3>
-        <p class="box-desc">Private funding by VC firms is down 50% YOY. We take a look at what that means.</p>
-      </div>
-    </div>
+      <div class="links">
+        <ul class="all-links hidden">
+          <li class="nav-links"><a class="nav-link" href="#home">Home</a></li>
+          <li class="nav-links"><a class="nav-link" href="#new">New</a></li>
+          <li class="nav-links"><a class="nav-link" href="#">Popular</a></li>
+          <li class="nav-links"><a class="nav-link" href="#">Trending</a></li>
+          <li class="nav-links"><a class="nav-link" href="#">Categories</a></li>
 
-    <div class="card-contain">
-      <img src="./assets/images/image-retro-pcs.jpg" alt="Reviving Retro Pc">
-      <div class="card-content">
-        <h2>01</h2>
-        <h3>
-          Reviving Retro PCs
-        </h3>
-        <p class="card-desc">
-          What happens when old PCs are given modern upgrades?
+        </ul>
+        <button class="nav-icon close-page">
+          <img class="icon-mobile-nav" src="./assets/images/icon-menu-close.svg" alt="hamburger" width="24px">
+        </button>
+      </div>
+      <button class="nav-icon open-page">
+        <img class="icon-mobile-nav" src="./assets/images/icon-menu.svg" alt="hamburger" width="24px">
+      </button>
+
+    </nav>
+    <div class="container grid grid--cols-3 other-content">
+      <img class="main-img" src="./assets/images/image-web-3-mobile.jpg" alt="desktop image" id="home">
+
+      <h1 class="title">
+        The Bright Future of Web 3.0?
+      </h1>
+      <div class="description-contaier">
+        <p class="description">
+          We dive into the next evolution of the web that claims to put the power of the platforms back into the hands
+          of
+          the people.
+          But is it really fulfilling its promise?
         </p>
+        <button class="page-btn">read more</button>
       </div>
-    </div>
-    <div class="card-contain">
-      <img src="./assets/images/image-top-laptops.jpg" alt="Reviving Retro Pc">
-      <div class="card-content">
-        <h2>02</h2>
-        <h3>
-          Top 10 Laptops of 2022
-        </h3>
-        <p class="card-desc">
-          Our best picks for various needs and budgets.
-        </p>
+
+      <div class="new-box" id="new">
+        <h2 class="box-main-title">New</h2>
+        <div class="box-contents">
+          <h3 class="box-title">Hydrogen VS Electric Cars</h3>
+          <p class="box-desc">Will hydrogen-fueled cars ever catch up to EVs?</p>
+        </div>
+        <div class="box-contents">
+          <h3 class="box-title">The Downsides of AI Artistry</h3>
+          <p class="box-desc">What are the possible adverse effects of on-demand AI image generation?</p>
+        </div>
+        <div class="box-contents">
+          <h3 class="box-title">Is VC Funding Drying Up?</h3>
+          <p class="box-desc">Private funding by VC firms is down 50% YOY. We take a look at what that means.</p>
+        </div>
       </div>
-    </div>
-    <div class="card-contain">
-      <img src="./assets/images/image-gaming-growth.jpg" alt="Reviving Retro Pc">
-      <div class="card-content">
-        <h2>03</h2>
-        <h3>
-          The Growth of Gaming
-        </h3>
-        <p class="card-desc">
-          How the pandemic has sparked fresh opportunities.
-        </p>
+      <div class="all-cards grid">
+        <div class="card-contain">
+          <img src="./assets/images/image-retro-pcs.jpg" alt="Reviving Retro Pc">
+          <div class="card-content">
+            <h2>01</h2>
+            <h3>
+              Reviving Retro PCs
+            </h3>
+            <p class="card-desc">
+              What happens when old PCs are given modern upgrades?
+            </p>
+          </div>
+        </div>
+        <div class="card-contain">
+          <img src="./assets/images/image-top-laptops.jpg" alt="Reviving Retro Pc">
+          <div class="card-content">
+            <h2>02</h2>
+            <h3>
+              Top 10 Laptops of 2022
+            </h3>
+            <p class="card-desc">
+              Our best picks for various needs and budgets.
+            </p>
+          </div>
+        </div>
+        <div class="card-contain">
+          <img src="./assets/images/image-gaming-growth.jpg" alt="Reviving Retro Pc">
+          <div class="card-content">
+            <h2>03</h2>
+            <h3>
+              The Growth of Gaming
+            </h3>
+            <p class="card-desc">
+              How the pandemic has sparked fresh opportunities.
+            </p>
+          </div>
+        </div>
       </div>
+
     </div>
-  </div>
-
-
-
-
-
-
-
-
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-    Coded by <a href="../index.html">AYUSH GUPTA</a>.
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="../index.html">AYUSH GUPTA</a>.
+    </div>
   </div>
 </body>
 
