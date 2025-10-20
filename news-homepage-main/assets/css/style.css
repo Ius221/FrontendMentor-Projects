@@ -15,15 +15,11 @@ body {
 }
 
 .logo img {
-    width: 30px;
+    width: 5rem;
 }
 
-/* .links {
-    display: none;
-} */
-
 .container {
-    padding: 14px;
+    padding: 1.4rem;
     padding-bottom: 0;
     /* max-width: 320px; 
     margin: 0 auto;*/
@@ -48,7 +44,7 @@ body {
 
 .description {
     color: hsl(236, 13%, 42%);
-    font-size: 1.8rem;
+    font-size: 1.4rem;
     line-height: 1.5
 }
 
@@ -116,7 +112,7 @@ h3 {
 
 .box-desc {
     margin-top: 1.2rem;
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     line-height: 1.4;
 }
 
@@ -191,51 +187,69 @@ li a {
     display: none;
 }
 
-/* .hidden {
-    background-color: #cccccc;
-    filter: brightness(.5);
-    opacity: .7;
-} */
+
 
 @media (min-width: 768px) {
-    body {
-        background-color: #f00;
+
+
+    html {
+        font-size: 62.5%;
+    }
+
+    .container {
+        max-width: 768px;
+        margin: 0 auto;
+    }
+
+    .nav-icon {
+        display: none;
+    }
+
+    .links {
+        opacity: 1;
+        z-index: 1;
+        background-color: transparent;
+        height: auto;
+        width: auto;
+        position: relative;
+        padding: 2rem;
+    }
+
+    .all-links {
+        margin-top: 0;
+        flex-direction: row;
+    }
+
+    .grid {
+        gap: 3rem;
+    }
+
+    .grid-cols-3 {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .main-img {
+        grid-column: 1/3;
+    }
+
+    .new-box {
+        grid-column: 3/4;
+        grid-row: 1/3;
+        margin: 0;
+    }
+
+    .box-contents {
+        padding: 2.4rem 0;
+    }
+
+    .all-cards {
+        display: flex !important;
+        grid-column: 1 / -1;
     }
 }
 
 @media (min-width: 1024px) {
-    body {
-        background-color: #0f0;
-    }
-
-    .nav {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    ul {
-        list-style-type: none;
-        display: flex;
-        gap: 3rem;
-    }
-
-    .nav-link:link,
-    .nav-link:visited {
-        font-size: 1.6rem;
-        color: hsl(236, 13%, 42%);
-        transition: all .3s;
-        text-decoration: none;
-    }
-
-    .nav-link:hover,
-    .nav-link:active {
-        color: hsl(5, 85%, 63%);
-    }
-
-
-    .main-img {
-        grid-column: span 2;
-        width: 100%;
+    .container {
+        max-width: 1024px;
     }
 }
