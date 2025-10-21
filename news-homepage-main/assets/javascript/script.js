@@ -7,7 +7,7 @@ const sideBar = document.querySelector('.links');
 const restBody = document.querySelector('.other-content');
 const logo = document.querySelector('.logo');
 const img = document.querySelector('.main-img');
-const mediaQuery = window.matchMedia('(min-width: 768px)');
+const mediaQuery = window.matchMedia('(min-width: 1024px)');
 /////////////////////////////
 
 
